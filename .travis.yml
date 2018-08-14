@@ -31,7 +31,7 @@ install:
             python-pip
     - sudo pip install flake8>=3.5.0
     - sudo pip install flake8_formatter_junit_xml
-    - sudo install/travis.sh travis .
+#    - sudo install/travis.sh travis .
 
 before_script:
     - install/setup_rabbitmq.sh
