@@ -36,7 +36,7 @@ install:
 before_script:
     - install/setup_rabbitmq.sh
     - install/setup_postgres.sh
-    - install/setup_cassandra.sh
+#    - install/setup_cassandra.sh
 
 script:
     - cd r2
