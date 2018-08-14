@@ -43,7 +43,10 @@ nosetests \
     --with-coverage \
     --cover-html \
     --cover-html-dir=$COVERDIR \
+    --cover-xml \
     --cover-erase \
+    --with-xunit \
+    --xunit-file=$COVERDIR\nosetests.xml \
     --cover-package=r2
 
 if [ "$PORT" != "" ]; then

@@ -70,3 +70,15 @@ notify:
   slack:
     webhook_url: $$CI_SLACK_WEBHOOK_URL
     channel: ci-notifications
+
+pipeline:
+  testspace:
+    image: s2technologies/testspace-client
+    pull: true
+    commands:
+      - testspace config url $${TESTSPACE_TOKEN}:@reddit.testspace.com
+      - testspace TEST*.xml
+    secrets: [ testspace_token ]
+    when:
+      status: [ failure, success ]
+
