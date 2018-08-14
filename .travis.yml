@@ -32,7 +32,7 @@ install:
             python-nose \
             python-pip \
             python-pylons \
-            python-pytz \
+            python-tz
     - sudo pip install flake8>=3.5.0
     - sudo pip install flake8_formatter_junit_xml
 #    - sudo install/travis.sh travis .
