@@ -25,10 +25,14 @@ install:
         sudo apt-get install -y \
             make \
             pylint \
+            python-beautifulsoup \
+            python-bcrypt \
             python-coverage \
             python-mock \
             python-nose \
-            python-pip
+            python-pip \
+            python-pylons \
+            python-pytz \
     - sudo pip install flake8>=3.5.0
     - sudo pip install flake8_formatter_junit_xml
 #    - sudo install/travis.sh travis .
