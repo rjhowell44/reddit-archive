@@ -44,7 +44,7 @@ before_script:
 
 script:
     - cd r2
-    - nosetests
+    - nosetests with-xunit=1 xunit-file=nosetests.xml
     - flake8 r2/tests
 
 after_script:
